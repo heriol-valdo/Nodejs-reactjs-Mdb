@@ -161,7 +161,7 @@ const UserLogin = () => {
             <Button type="submit" variant="contained"  disabled={!isFormValid} className={classes.button}>LOGIN</Button>
           </form>
 
-          <Button  component={Link} to="/addUser" variant="contained"   className={classes.buttonback}>SING IN</Button>
+          <Button  component={Link} to="/addUser" variant="contained"   className={classes.buttonback}>SING UP</Button>
         </CardContent>
       </Card>
     </Container>
