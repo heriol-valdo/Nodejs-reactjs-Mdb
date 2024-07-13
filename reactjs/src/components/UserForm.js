@@ -75,7 +75,6 @@ const UserForm = () => {
   // Permet de mettre à jour les champs du formulaire lors de la saisie de l'utilisateur
   const handleChange = e => {
     const { name, value } = e.target;
-    //setUser({ ...user, [name]: value });
     setUser(user => ({ ...user, [name]: value }));
   };
 
