@@ -152,7 +152,7 @@ const UserForm = () => {
               className={classes.input}
             />
            
-            <Button type="submit" variant="contained" disabled={!isFormValid}  className={classes.button}>SING IN</Button>
+            <Button type="submit" variant="contained" disabled={!isFormValid}  className={classes.button}>SIGN UP</Button>
           </form>
 
           <Button  component={Link} to="/login" variant="contained"   className={classes.buttonback}>LOGIN</Button>
