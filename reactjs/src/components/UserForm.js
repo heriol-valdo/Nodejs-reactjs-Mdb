@@ -75,7 +75,6 @@ const UserForm = () => {
   // Permet de mettre à jour les champs du formulaire lors de la saisie de l'utilisateur
   const handleChange = e => {
     const { name, value } = e.target;
-    //setUser({ ...user, [name]: value });
     setUser(user => ({ ...user, [name]: value }));
   };
 
@@ -152,7 +151,7 @@ const UserForm = () => {
               className={classes.input}
             />
            
-            <Button type="submit" variant="contained" disabled={!isFormValid}  className={classes.button}>SING IN</Button>
+            <Button type="submit" variant="contained" disabled={!isFormValid}  className={classes.button}>SIGN UP</Button>
           </form>
 
           <Button  component={Link} to="/login" variant="contained"   className={classes.buttonback}>LOGIN</Button>

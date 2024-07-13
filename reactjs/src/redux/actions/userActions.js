@@ -109,15 +109,21 @@ export const getToken = () => {
 // Fonction pour vérifier si l'utilisateur est authentifié
 export const isAuthenticated = () => {
   const token = getToken();
-  if (token) return true;
+  if (!token) return false;
 
   try {
     const decoded = jwtDecode(token);
-    return decoded.exp > Date.now() / 1000;
+    const exp = decoded.exp > Date.now() / 1000;
+    if (!exp) {
+      logout();
+      return false;
+    }
+    return true;
   } catch (e) {
     return false;
   }
 };
+
 
 
 
